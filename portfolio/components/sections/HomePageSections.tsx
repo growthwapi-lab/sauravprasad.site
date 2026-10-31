@@ -186,11 +186,12 @@ export function HeroSection() {
                 {/* Main photo */}
                 <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-blue-500/10">
                   <Image
-                    src="/Saurav Prasad.png.png"
+                    src="/Saurav Prasad.jpg"
                     alt="Saurav Prasad - Website Designer & Full-Stack Developer"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     priority
+                    quality={100}
                     sizes="(max-width: 640px) 288px, (max-width: 1024px) 320px, 384px"
                   />
                   {/* Gradient overlay */}

@@ -107,10 +107,11 @@ export default function AboutPage() {
                 className="relative w-80 h-96 lg:w-96 lg:h-[480px] rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10"
               >
                 <Image
-                  src="/Saurav Prasad.png.png"
+                  src="/Saurav Prasad.jpg"
                   alt="Saurav Prasad"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
+                  quality={100}
                   sizes="(max-width: 1024px) 320px, 384px"
                 />
                 {/* Gradient overlay */}
