@@ -189,12 +189,20 @@ export default function AdminMessagesPage() {
                   </div>
                 </div>
 
-                <div className="pt-2">
+                <div className="pt-2 flex items-center gap-3 flex-wrap">
                   <a
-                    href={`mailto:${selectedMessage.email}?subject=Re: Inquiry on Saurav Prasad Website`}
+                    href={`https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(selectedMessage.email)}&su=${encodeURIComponent('Re: Inquiry on Saurav Prasad Website')}&body=${encodeURIComponent('Hi ' + selectedMessage.name + ',\n\nThank you for reaching out!\n\n')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#1E5BFF] text-white text-xs font-semibold rounded-xl hover:bg-[#1650cc] shadow-md shadow-blue-500/20 transition-all cursor-pointer"
                   >
-                    <Reply size={15} /> Reply via Email
+                    <Reply size={15} /> Reply via Gmail
+                  </a>
+                  <a
+                    href={`mailto:${selectedMessage.email}?subject=Re: Inquiry on Saurav Prasad Website`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-100 text-gray-700 text-xs font-semibold rounded-xl hover:bg-gray-200 transition-all cursor-pointer"
+                  >
+                    <Mail size={15} /> Reply via Mail App
                   </a>
                 </div>
               </div>
