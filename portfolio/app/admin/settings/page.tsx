@@ -11,7 +11,7 @@ export default function AdminSettingsPage() {
   const [errorMsg, setErrorMsg] = useState('')
 
   // Contact Info state
-  const [email, setEmail] = useState('contact@sauravprasad.dev')
+  const [email, setEmail] = useState('SauravPrasad119@gmail.com')
   const [phone, setPhone] = useState('7782004400')
   const [whatsapp, setWhatsapp] = useState('917782004400')
   const [location, setLocation] = useState('India')
